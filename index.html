@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>نورقاب | عکس تبلیغاتی محصول</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;800&display=swap">
+<style>
+:root{--bg:#faf7f2;--fg:#1c1a17;--muted:#7a746b;--card:#efe9df;--accent:#b8893b;--line:#e0d8ca}
+@media (prefers-color-scheme:dark){:root{--bg:#14120f;--fg:#f3ede2;--muted:#a39b8d;--card:#201d18;--accent:#d4a752;--line:#2e2a23;color-scheme:dark}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:1.4rem;color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-inline-start:20px;font-size:.95rem}
+.hero{padding:64px 0 48px;text-align:center}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);font-weight:800;line-height:1.4}
+.hero h1 span{color:var(--accent)}
+.hero p{color:var(--muted);max-width:520px;margin:16px auto 28px}
+.btn{display:inline-block;background:var(--accent);color:#14120f;padding:10px 28px;border-radius:99px;text-decoration:none;font-weight:700}
+h2{font-size:1.6rem;margin:56px 0 20px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.filters button{font:inherit;background:none;color:var(--muted);border:1px solid var(--line);padding:4px 16px;border-radius:99px;cursor:pointer}
+.filters button.on{background:var(--accent);color:#14120f;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.item{position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card);padding:0;cursor:pointer;display:block;width:100%;font:inherit;color:#fff;text-align:start}
+.item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.item:hover img{transform:scale(1.04)}
+.item .cap{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.72));line-height:1.5}
+.item .cap b{display:block;font-size:.95rem}
+.item .cap small{opacity:.8;font-size:.8rem}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.services div{background:var(--card);border-radius:16px;padding:22px;border:1px solid var(--line)}
+.services h3{color:var(--accent);font-size:1.1rem}
+.services p{color:var(--muted);font-size:.92rem}
+footer{margin:64px 0 24px;padding-top:32px;border-top:1px solid var(--line);text-align:center}
+footer p{color:var(--muted);margin-bottom:16px}
+footer a{color:var(--fg);margin:0 12px;text-decoration:none;border-bottom:1px solid var(--accent)}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:16px;cursor:zoom-out}
+#lb.open{display:flex}
+#lb img{max-width:100%;max-height:92vh;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="logo">نورقاب</div><div><a href="#work">نمونه‌کارها</a><a href="#services">خدمات</a><a href="#contact">تماس</a></div></nav>
+<section class="hero">
+<h1>عکس تبلیغاتی که <span>محصولت</span> رو می‌فروشه</h1>
+<p>عکس‌های حرفه‌ای و جذاب برای معرفی محصول در اینستاگرام، فروشگاه آنلاین و تبلیغات.</p>
+<a class="btn" href="#contact">سفارش بده</a>
+</section>
+<section id="work">
+<h2>نمونه‌کارها</h2>
+<div class="filters" id="f"></div>
+<div class="grid" id="g"></div>
+</section>
+<section id="services">
+<h2>خدمات</h2>
+<div class="services">
+<div><h3>عکس محصول تنها</h3><p>قاب تمیز و لوکس از خود محصول، مناسب فروشگاه و کاتالوگ.</p></div>
+<div><h3>عکس با مدل</h3><p>محصول روی مدل، برای حس واقعی‌تر و جذب مخاطب بیشتر.</p></div>
+<div><h3>سری تبلیغاتی</h3><p>چند عکس هماهنگ با یک سبک، آماده‌ی پست و استوری.</p></div>
+</div>
+</section>
+<footer id="contact">
+<p>برای سفارش یا سؤال، پیام بده:</p>
+<a href="#">اینستاگرام</a><a href="#">تلگرام</a><a href="#">ایمیل</a>
+</footer>
+</div>
+<div id="lb"><img alt=""></div>
+<script>
+var items=[
+{src:"photo-01.jpg",cat:"کیف",t:"کیف چرم کروکو",s:"کیف دستی با دسته بامبو"},
+{src:"photo-02.jpg",cat:"کیف",t:"کیف چرم کروکو",s:"نمای نزدیک از بافت و قفل"},
+{src:"photo-03.jpg",cat:"کفش",t:"اسنیکر طرح پوست گاو",s:"عکس محصول"},
+{src:"photo-04.jpg",cat:"کفش",t:"اسنیکر طرح پوست گاو",s:"عکس محصول"},
+{src:"photo-05.jpg",cat:"کفش",t:"اسنیکر طرح پوست گاو",s:"عکس محصول، نور طبیعی"},
+{src:"photo-06.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس محصول"},
+{src:"photo-07.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس محصول"},
+{src:"photo-08.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس محصول"},
+{src:"photo-09.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس با دست"},
+{src:"photo-10.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"عطر ۳۰ میلی‌لیتر"},
+{src:"photo-11.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"نور سینمایی"},
+{src:"photo-12.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"عطر ۳۰ میلی‌لیتر"},
+{src:"photo-13.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"فضای تاریک و گرم"},
+{src:"photo-14.jpg",cat:"عطر",t:"Shadow of Rose | Alambra",s:"عطر ۱۰۰ میلی‌لیتر"},
+{src:"photo-15.jpg",cat:"تیشرت",t:"تیشرت اورسایز Sheikh",s:"عکس با مدل"},
+{src:"photo-16.jpg",cat:"ساعت",t:"ساعت با صفحه سنگی",s:"عکس محصول"},
+{src:"photo-17.jpg",cat:"ساعت",t:"ساعت با صفحه سنگی",s:"عکس محصول"}
+];
+var cats=["همه"].concat(items.map(function(i){return i.cat}).filter(function(v,i,a){return a.indexOf(v)===i}));
+var f=document.getElementById("f"),g=document.getElementById("g"),lb=document.getElementById("lb");
+function show(c){
+ g.innerHTML="";
+ items.forEach(function(i){
+  if(c==="همه"||i.cat===c){
+   var b=document.createElement("button");b.className="item";
+   var im=document.createElement("img");im.src=i.src;im.alt=i.t;im.loading="lazy";
+   var cp=document.createElement("div");cp.className="cap";
+   cp.innerHTML="<b></b><small></small>";cp.children[0].textContent=i.t;cp.children[1].textContent=i.s;
+   b.appendChild(im);b.appendChild(cp);
+   b.onclick=function(){lb.firstChild.src=i.src;lb.className="open"};
+   g.appendChild(b);
+  }
+ });
+ [].forEach.call(f.children,function(x){x.className=x.textContent===c?"on":""});
+}
+cats.forEach(function(c){var b=document.createElement("button");b.textContent=c;b.onclick=function(){show(c)};f.appendChild(b)});
+lb.onclick=function(){lb.className=""};
+show("همه");
+</script>
+</body>
+</html>
