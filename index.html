@@ -6,8 +6,9 @@
 <title>نورقاب | عکس تبلیغاتی محصول</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;800&display=swap">
 <style>
-:root{--bg:#faf7f2;--fg:#1c1a17;--muted:#7a746b;--card:#efe9df;--accent:#b8893b;--line:#e0d8ca}
-@media (prefers-color-scheme:dark){:root{--bg:#14120f;--fg:#f3ede2;--muted:#a39b8d;--card:#201d18;--accent:#d4a752;--line:#2e2a23;color-scheme:dark}}
+:root{--bg:#faf7f2;--fg:#1c1a17;--muted:#7a746b;--card:#efe9df;--accent:#b8893b;--line:#e0d8ca;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14120f;--fg:#f3ede2;--muted:#a39b8d;--card:#201d18;--accent:#d4a752;--line:#2e2a23;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14120f;--fg:#f3ede2;--muted:#a39b8d;--card:#201d18;--accent:#d4a752;--line:#2e2a23;color-scheme:dark}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9}
@@ -66,30 +67,12 @@ footer a{color:var(--fg);margin:0 12px;text-decoration:none;border-bottom:1px so
 </section>
 <footer id="contact">
 <p>برای سفارش یا سؤال، پیام بده:</p>
-<a href="#">اینستاگرام</a><a href="#">تلگرام</a><a href="#">ایمیل</a>
+<a href="https://t.me/Ali_ai_work" target="_blank" rel="noopener">تلگرام: @Ali_ai_work</a>
 </footer>
 </div>
 <div id="lb"><img alt=""></div>
 <script>
-var items=[
-{src:"photo-01.jpg",cat:"کیف",t:"کیف چرم کروکو",s:"کیف دستی با دسته بامبو"},
-{src:"photo-02.jpg",cat:"کیف",t:"کیف چرم کروکو",s:"نمای نزدیک از بافت و قفل"},
-{src:"photo-03.jpg",cat:"کفش",t:"اسنیکر طرح پوست گاو",s:"عکس محصول"},
-{src:"photo-04.jpg",cat:"کفش",t:"اسنیکر طرح پوست گاو",s:"عکس محصول"},
-{src:"photo-05.jpg",cat:"کفش",t:"اسنیکر طرح پوست گاو",s:"عکس محصول، نور طبیعی"},
-{src:"photo-06.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس محصول"},
-{src:"photo-07.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس محصول"},
-{src:"photo-08.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس محصول"},
-{src:"photo-09.jpg",cat:"کفش",t:"اسنیکر چرم سفید",s:"عکس با دست"},
-{src:"photo-10.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"عطر ۳۰ میلی‌لیتر"},
-{src:"photo-11.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"نور سینمایی"},
-{src:"photo-12.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"عطر ۳۰ میلی‌لیتر"},
-{src:"photo-13.jpg",cat:"عطر",t:"Corpse of a Star | Necros",s:"فضای تاریک و گرم"},
-{src:"photo-14.jpg",cat:"عطر",t:"Shadow of Rose | Alambra",s:"عطر ۱۰۰ میلی‌لیتر"},
-{src:"photo-15.jpg",cat:"تیشرت",t:"تیشرت اورسایز Sheikh",s:"عکس با مدل"},
-{src:"photo-16.jpg",cat:"ساعت",t:"ساعت با صفحه سنگی",s:"عکس محصول"},
-{src:"photo-17.jpg",cat:"ساعت",t:"ساعت با صفحه سنگی",s:"عکس محصول"}
-];
+var items=[{"src": "photo-01.jpg", "cat": "کیف", "t": "کیف چرم کروکو", "s": "کیف دستی با دسته بامبو"}, {"src": "photo-02.jpg", "cat": "کیف", "t": "کیف چرم کروکو", "s": "نمای نزدیک از بافت و قفل"}, {"src": "photo-03.jpg", "cat": "کفش", "t": "اسنیکر طرح پوست گاو", "s": "عکس محصول"}, {"src": "photo-04.jpg", "cat": "کفش", "t": "اسنیکر طرح پوست گاو", "s": "عکس محصول"}, {"src": "photo-05.jpg", "cat": "کفش", "t": "اسنیکر طرح پوست گاو", "s": "عکس محصول، نور طبیعی"}, {"src": "photo-06.jpg", "cat": "کفش", "t": "اسنیکر چرم سفید", "s": "عکس محصول"}, {"src": "photo-07.jpg", "cat": "کفش", "t": "اسنیکر چرم سفید", "s": "عکس محصول"}, {"src": "photo-08.jpg", "cat": "کفش", "t": "اسنیکر چرم سفید", "s": "عکس محصول"}, {"src": "photo-09.jpg", "cat": "کفش", "t": "اسنیکر چرم سفید", "s": "عکس با دست"}, {"src": "photo-10.jpg", "cat": "عطر", "t": "Corpse of a Star | Necros", "s": "عطر ۳۰ میلی‌لیتر"}, {"src": "photo-11.jpg", "cat": "عطر", "t": "Corpse of a Star | Necros", "s": "نور سینمایی"}, {"src": "photo-12.jpg", "cat": "عطر", "t": "Corpse of a Star | Necros", "s": "عطر ۳۰ میلی‌لیتر"}, {"src": "photo-13.jpg", "cat": "عطر", "t": "Corpse of a Star | Necros", "s": "فضای تاریک و گرم"}, {"src": "photo-14.jpg", "cat": "عطر", "t": "Shadow of Rose | Alambra", "s": "عطر ۱۰۰ میلی‌لیتر"}, {"src": "photo-15.jpg", "cat": "تیشرت", "t": "تیشرت اورسایز Sheikh", "s": "عکس با مدل"}, {"src": "photo-16.jpg", "cat": "ساعت", "t": "ساعت با صفحه سنگی", "s": "عکس محصول"}, {"src": "photo-17.jpg", "cat": "ساعت", "t": "ساعت با صفحه سنگی", "s": "عکس محصول"}];
 var cats=["همه"].concat(items.map(function(i){return i.cat}).filter(function(v,i,a){return a.indexOf(v)===i}));
 var f=document.getElementById("f"),g=document.getElementById("g"),lb=document.getElementById("lb");
 function show(c){
